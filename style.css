@@ -1,0 +1,105 @@
+@keyframes scintille { 
+  0% {
+    color: #2D6A4F;
+    text-shadow: 0 0 80px #2D6A4F, 0 0 50px #2D6A4F, 0 0 40px #2D6A4F, 0 0 80px #2D6A4F, 0 0 80px #2D6A4F, 0 0 70px #2D6A4F, 0 0 80px #BBD0FF;
+  }
+  80% {
+    color: #2D6A4F;
+    text-shadow: none;
+  }
+  100% {
+    color: #2D6A4F;
+    text-shadow: 0 0 40px #2D6A4F, 0 0 90px #2D6A4F, 0 0 80px #2D6A4F, 0 0 50px #2D6A4F, 0 0 60px #2D6A4F, 0 0 70px #2D6A4F, 0 0 70px #2D6A4F;
+  }
+}
+
+
+
+h1 {
+  animation: scintille 5s linear infinite;
+}
+
+body {
+  background: linear-gradient(45deg, #2D6A4F, #2D6A4F, #2D6A4F, #2D6A4F, #F5CAC3, #F7F6BD);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  text-align: center;
+
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 90%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 45%;
+    }
+ 
+.card-white {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+}
+.footer {
+  background: #404042;
+  text-align: center;
+  padding: 24px 0;
+}
+.container {
+  width: 800px;
+  margin: auto;
+}
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+}
+.banner h1 {
+  color: #EAE2B7;
+  font-size: 45px;
+  margin: 0;
+}
+.banner p {
+  color:#EAE2B7;
+  font-size: 24px;
+}
+.button-blue {
+  background-color: #EAE2B7;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+.button-blue:hover {
+  background-color: #0D1EC6;
+  color: white;
+}
+p {
+  color: #EAE2B7;
+  opacity: .7;
+}
+
